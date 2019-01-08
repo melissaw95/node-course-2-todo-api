@@ -39,7 +39,7 @@ describe('POST /todos', () => {
           done();
         }).catch((e) => done(e));
       });
-  });
+  }); //end of it
 
   it('should not create todo with invalid body data', (done) => {
     request(app)
@@ -55,7 +55,7 @@ describe('POST /todos', () => {
           done();
         }).catch((e) => done(e));
       });
-  });
+  }); //end of it
 
 }); //end of describe
 
@@ -68,5 +68,5 @@ describe('GET /todos', () => {
         expect(res.body.todos.length).toBe(2);
       })
       .end(done);
-  });
-});
+  }); //end of it
+}); //end of describe
